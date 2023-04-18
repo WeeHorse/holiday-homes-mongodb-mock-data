@@ -6,6 +6,7 @@ async function run(){
     mongoose.connect(connection, {dbName: 'holidayhomes'})
     await generateUsers(false)
     await generateHomes()
+    await generateAgents()
     process.exit()
 }
 run()
@@ -43,6 +44,24 @@ async function generateHomes(clear = true){
         try{
             const result = await home.save()
             homes.push(result)
+        }catch(e){
+            console.error(e)
+        }
+    }
+
+}
+
+import {agentModel} from './routes/agents.js'
+const agents = []
+async function generateAgents(clear = true){
+    if(clear) await agentModel.deleteMany()    
+    for(let i=0; i<100; i++){
+        const agent = new agentModel()
+        agent.name = faker.lorem.word({ length: { min: 4, max: 10 } })
+        agent.homes = homes.filter(h => Math.random() < 0.2 ) // 20% chance
+        try{
+            const result = await agent.save()
+            agents.push(result)
         }catch(e){
             console.error(e)
         }

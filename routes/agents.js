@@ -12,7 +12,7 @@ const agentSchema = new Schema({
 })
 
 // create collection model
-mongoose.model('agents', agentSchema)
+export const agentModel = mongoose.model('agents', agentSchema)
 
 // define routes
 
