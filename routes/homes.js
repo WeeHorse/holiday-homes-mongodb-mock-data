@@ -14,7 +14,7 @@ const homeSchema = new Schema({
 })
 
 // create collection model
-export const homesModel = mongoose.model('homes', homeSchema)
+mongoose.model('homes', homeSchema)
 
 // define routes
 

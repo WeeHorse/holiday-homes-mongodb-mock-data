@@ -12,7 +12,7 @@ const userSchema = new Schema({
 })
 
 // create collection model
-export const usersModel = mongoose.model('users', userSchema)
+mongoose.model('users', userSchema)
 
 // define routes
 

@@ -1,17 +1,15 @@
 {
-  "name": "faker-example",
+  "name": "holiday-homes-mongodb-mock-data",
   "version": "1.0.0",
   "description": "",
   "main": "api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon api.js",
-    "generate": "node test-data-generator.js"
+    "dev": "nodemon api.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^7.6.0",
     "nodemon": "^2.0.22"
   },
   "dependencies": {
