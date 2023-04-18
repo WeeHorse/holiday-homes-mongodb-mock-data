@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "e3157928-0516-4219-86cb-c4a99dc45e8d",
+		"name": "holidayhomes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23777986"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3456/api/homes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Solhem 3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3456/api/homes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"homes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3456/api/homes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3456/api/homes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"homes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3456/api/homes/643675758e05d45404e348f6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3456/api/homes/643675758e05d45404e348f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"homes",
+						"643675758e05d45404e348f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3456/api/agents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3456/api/agents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"agents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3456/api/agents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Home Away\",\n    \"homes\": [{\"_id\": \"643675758e05d45404e348f6\"}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3456/api/agents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"agents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3456/api/homes/6436764919e42f5bcfaa6dc8",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": \"6436764919e42f5bcfaa6dc8\",\n        \"name\": \"Solhem 3\",\n        \"homeOwner\": {\"_id\": \"6436a09e601fd9eee5175ed0\"},\n        \"noOfRooms\": 2,\n        \"rating\": 4\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3456/api/homes/6436764919e42f5bcfaa6dc8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"homes",
+						"6436764919e42f5bcfaa6dc8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3456/api/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bob\",\n    \"email\": \"bob@node.com\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3456/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3456/api/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3456/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
